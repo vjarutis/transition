@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #00235B;
+}
+
+.container-1 {
+    height: 400px;
+    padding: 50px;
+    position: relative;
+}
+
+.box-1 {
+    width: 200px;
+    line-height: 200px;
+    background: #98DFD6;
+    margin: 50px auto;
+    border-radius: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: width 1s ease 0.5s;
+    opacity: 1;
+}
+
+.box-1:hover {
+    line-height: 100px;
+    width: 600px;
+    text-align: left;
+    padding: 10px;
+    background: #56817b;
+    color: rgb(144, 144, 144);
+    font-size: 2em;
+    transition-delay: 0.3s;
+    opacity: 0.7;
+    
+}
+
+.box-2 {
+    height: 250px;
+    width: 250px;
+    background: #FFDD83;
+    margin: 100px auto;
+    border-radius: 10% 50% 30% 70%;
+    animation: spin 8s infinite linear;
+}
+
+@keyframes spin {
+
+    0% {
+        transform: rotateZ(0);
+        border-radius: 125px}
+
+    10% {
+        transform: rotateZ(36deg);
+        border-radius: 200px 200px 25px 200px}
+
+    20% {
+        transform: rotateZ(72deg);
+        border-radius: 200px 200px 100px 200px}
+
+    30% {
+        transform: rotateZ(108deg);
+        border-radius: 200px 200px 200px 100px}
+
+    40% {
+        transform: rotateZ(144deg);
+        border-radius: 200px 200px 200px 25px}
+
+    50% {
+        transform: rotateZ(180deg);
+        border-radius: 125px}
+
+    60% {
+        transform: rotateZ(216deg);
+        border-radius: 100px 200px 200px 200px}
+
+    70% {
+        transform: rotateZ(252deg);
+        border-radius: 25px 200px 200px 200px}
+
+    80% {
+        transform: rotateZ(288deg);
+        border-radius: 200px 100px 200px 200px}
+
+    90% {
+        transform: rotateZ(314deg);
+        border-radius: 200px 25px 200px 200px}
+
+    100% {
+        transform: rotateZ(360deg);
+        border-radius: 200px 200px 100px 200px}
+    }
